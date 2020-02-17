@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Fokir-Personal Portfolio Bootstrap Template</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
@@ -21,8 +21,9 @@
     <!-- Start Home -->
     <section class="home" id="home">
         <div class="header">
-            <div class="layer">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-transperant">
+            <div class="layer"></div>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transperant change fixed-top">
                     <a class="navbar-brand" href="#">Fokir</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -31,7 +32,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-scroll="home">Home</a></li>
+                                <a class="nav-link nav-active" href="#" data-scroll="home">Home</a></li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#" data-scroll="about-me">About</a></li>
                             <li class="nav-item">
@@ -47,15 +48,14 @@
                         </ul>
                     </div>
                 </nav>
-
+            </div>
                 <div class="home-text">
                     <div class="container">
                         <h3>Hello i'm</h3>
                         <h1>ALEX SMITH</h1>
-                        <p>Professional Web <span class="typed"></span></p>
+                        <h4>Professional Web <span class="typed"></span></h4>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -65,21 +65,27 @@
     <section class="about-me" id="about-me">
         <div class="container py-5 mb-5">
             <div class="row">
-                <div class="col-md-4 col-sm-4 col-sm-12">
+                <div class="col-12 col-md-12 col-lg-4">
                     <div class="profile">
-                        <img src="img/profile.jpg" alt="/">
-                        <div class="overlay"></div>
+                        <img class="profile-img" src="img/profile.jpg" alt="/">
+                        <div class="profile-overlay">
+                            <div class="social">
+                                <ul>
+                                    <li><i class="fab fa-facebook-f"></i></li>
+                                    <li><i class="fab fa-google-plus-g"></i></li>
+                                    <li><i class="fab fa-github"></i></li>
+                                    <li><i class="fab fa-twitter"></i></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="col-md-8 col-sm-8 col-sm-12">
-
+                <div class="col-12 col-md-12 col-lg-7">
                     <div class="hello">
                         <h1>HELLO,</h1>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <div class="container">
                             <div class="row">
-                                <div class="col-md-6 col-sm-6 col-sm-12">
+                                <div class="col-lg-6 col-md-5 col-12">
                                     <div class="info-1">
                                         <ul>
                                             <li><span>Name:</span>Rdam smith</li>
@@ -88,8 +94,7 @@
                                         </ul>
                                     </div>
                                 </div>
-
-                                <div class="col-md-6 col-sm-6 col-sm-12">
+                                <div class="col-lg-6 col-md-5 col-12">
                                     <div class="info-2">
                                         <ul>
                                             <li><span>Job Title:</span>UI/UX Designer</li>
@@ -98,46 +103,41 @@
                                         </ul>
                                     </div>
                                 </div>
-
                             </div>
+                    </div>
+                    <div class="container buttons mt-3">
+                        <div class="row col-12">
+                            <button class="btn btn-downlaod mr-1">Download CV<i class="fas fa-download"></i></button>
+                            <button class="btn btn-hireme">Hire Me<i class="fas fa-paper-plane"></i></button>
                         </div>
                     </div>
-                    <div class="container buttons">
-                        <button class="btn btn-downlaod">Download CV<i class="fas fa-download"></i></button>
-                        <button class="btn btn-hireme">Hire Me<i class="fas fa-paper-plane"></i></button>
-
-                    </div>
-
                 </div>
             </div>
         </div>
     </section>
+    <!-- End About -->
 
     <!-- Start Services -->
-
     <section class="services" id="services">
-        <div class="container py-5">
+        <div class="container">
             <h1>Our Services</h1>
-            <div class="row py-5">
-                <div class=" item col-md-3 col-sm-6 mt-5">
+            <div class="row">
+                <div class="item col-12 col-md-6 col-lg-3">
                     <i class="fas fa-pencil-alt fa-2x"></i>
                     <h2>ui/ux design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
                 </div>
-
-                <div class=" item col-md-3 col-sm-6  mt-5">
+                <div class=" item col-12 col-md-6 col-lg-3">
                     <i class="fas fa-code fa-2x"></i>
                     <h2>app developent</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
                 </div>
-
-                <div class=" item col-md-3 col-sm-6  mt-5">
+                <div class=" item col-12 col-md-6 col-lg-3">
                     <i class="far fa-object-group fa-2x"></i>
                     <h2>product design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
                 </div>
-
-                <div class=" item col-md-3 col-sm-6  mt-5">
+                <div class=" item col-12 col-md-6 col-lg-3">
                     <i class="fas fa-cogs fa-2x"></i>
                     <h2>ui/ux design</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione adipisci mollitia quis necstatibus.</p>
@@ -145,60 +145,64 @@
             </div>
         </div>
     </section>
-
     <!-- End Services -->
 
     <!-- Start Portfolio -->
-
     <section class="portfolio" id="portfolio">
         <div class="container py-5">
             <h1>Our Portfolio</h1>
-            <div class="row py-4">
-                <div class="col-md-4 col-sm-4 col-sm-12">
+            <div class="row">
+                <ul class="shuffle text-center">
+                    <li class="selected filter" data-filter="all">all</li>
+                    <li class="filter" data-filter=".graphic">graphic</li>
+                    <li class="filter" data-filter=".webdesign">web design</li>
+                    <li class="filter" data-filter=".branding">branding</li>
+                </ul>
+            </div>
+            <div class="row py-4" id="container">
+                <div class="col-md-4 col-12 mix">
                     <img class="img-fluid" src="img/1.jpg" alt="/">
                 </div>
-                <div class="col-md-4 col-sm-4 col-sm-12">
+                <div class="col-md-4 col-12 mix graphic webdesign branding">
                     <img class="img-fluid" src="img/2.jpg" alt="/">
                 </div>
-                <div class="col-md-4 col-sm-4 col-sm-12">
+                <div class="col-md-4 col-12 mix graphic">
                     <img class="img-fluid" src="img/3.jpg" alt="/">
                 </div>
-                <div class="col-md-4 col-sm-4 col-sm-12">
+                <div class="col-md-4 col-12 mix graphic webdesign">
                     <img class="img-fluid" src="img/4.jpg" alt="/">
                 </div>
-                <div class="col-md-4 col-sm-4 col-sm-12">
+                <div class="col-md-4 col-12 mix graphic webdesign">
                     <img class="img-fluid" src="img/5.jpg" alt="/">
                 </div>
-                <div class="col-md-4 col-sm-4 col-sm-12">
+                <div class="col-md-4 col-12 mix graphic branding">
                     <img class="img-fluid" src="img/6.jpg" alt="/">
                 </div>
             </div>
         </div>
-
     </section>
-
     <!-- End Portfolio -->
 
     <!-- Start Counter -->
     <section class="counter">
         <div class="container py-5">
             <div class="row py-4">
-                <div class="col-md-3 col-sm-3 col-sm-12">
+                <div class="col-md-3 col-12">
                     <i class="fas fa-users fa-2x"></i>
                     <span class="count">200</span>
                     <h5>Team Member</h5>
                 </div>
-                <div class="col-md-3 col-sm-3 col-sm-12">
+                <div class="col-md-3 col-12">
                     <i class="far fa-copy fa-2x"></i>
                     <span class="count">345</span>
                     <h5>Complete Projects</h5>
                 </div>
-                <div class="col-md-3 col-sm-3 col-sm-12">
+                <div class="col-md-3 col-12">
                     <i class="fas fa-cloud-download-alt fa-2x"></i>
                     <span class="count">1800</span>
                     <h5>Files Download</h5>
                 </div>
-                <div class="col-md-3 col-sm-3 col-sm-12">
+                <div class="col-md-3  col-12">
                     <i class="fas fa-coffee fa-2x"></i>
                     <span class="count">1200</span>
                     <h5>Lines Of Code</h5>
@@ -209,18 +213,19 @@
     <!-- End Counter -->
 
     <!-- Start Testimonials -->
-
     <section class="testimonial" id="testimonial">
         <div class="container py-5">
             <h1>Client's Feedback</h1>
             <div class="row py-5">
                 <div class="owl-carousel owl-theme owl-loaded">
-
-                    <div class="item">
-                        <div class="testim-item">
+                    <div class="col-12 col-md-12 col-lg-12">
+                            <div class="testim-item row">
+                        <div class="col-md-2 col-12">
                             <div class="item-img">
                                 <img src="img/test2.jpg">
                             </div>
+                        </div>
+                        <div class="col-md-10 col-12">
                             <div class="item-details">
                                 <h3>Alex ander</h3>
                                 <i class="fas fa-map-marker-alt"></i><span>United</span>
@@ -236,52 +241,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="testim-item">
-                            <div class="item-img">
-                                <img src="img/test3.jpg">
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="testim-item row">
+                            <div class="col-md-2 col-12">
+                                <div class="item-img">
+                                    <img src="img/test3.jpg">
+                                </div>
                             </div>
-                            <div class="item-details">
-                                <h3>Alex ander</h3>
-                                <i class="fas fa-map-marker-alt"></i><span>United</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
+                            <div class="col-md-10 col-12">
+                                <div class="item-details">
+                                    <h3>Alex ander</h3>
+                                    <i class="fas fa-map-marker-alt"></i><span>United</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="testim-item">
-                            <div class="item-img">
-                                <img src="img/test2.jpg">
-                            </div>
-                            <div class="item-details">
-                                <h3>Alex ander</h3>
-                                <i class="fas fa-map-marker-alt"></i><span>United</span>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                                <div class="rating">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
-
             </div>
         </div>
     </section>
-
     <!-- End Testimonials -->
 
     <!-- Start Blog -->
@@ -289,8 +278,8 @@
         <div class="container py-5">
             <h1>Our Blog</h1>
             <div class="row py-5">
-                <div class="col-md-4 col-sm-12">
-                    <div class="card" style="width: 21rem;">
+                <div class="col-12 col-md-4">
+                    <div class="card">
                         <img src="img/blog1.jpg" class="card-img-top" alt="/">
                         <div class="card-body">
                             <span>23 November, 2015</span>
@@ -300,8 +289,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card" style="width: 21rem;">
+                <div class="col-12 col-md-4">
+                    <div class="card">
                         <img src="img/blog3.jpg" class="card-img-top" alt="/">
                         <div class="card-body">
                             <span>20 April, 2018</span>
@@ -311,8 +300,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <div class="card" style="width: 21rem;">
+                <div class="col-12 col-md-4">
+                    <div class="card">
                         <img src="img/blog1.jpg" class="card-img-top" alt="/">
                         <div class="card-body">
                             <span>17 May, 2017</span>
@@ -326,25 +315,25 @@
         </div>
     </section>
     <!-- End Blog -->
-    <!-- Start Contact Me -->
 
+    <!-- Start Contact Me -->
     <section class="contact-me" id="contact-me">
         <div class="container py-5">
             <h1>Contact Us</h1>
             <div class="row py-5">
-                <form>
-                    <div class="form-row">
+                <form class="row col-md-9">
                         <div class="form-group col-md-6">
                             <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
                         </div>
                         <div class="form-group col-md-6">
                             <input type="email" class="form-control" id="inputPassword4" placeholder="Email">
                         </div>
-                    </div>
-                    <div class="form-group">
+                    <div class="form-group col-12">
                         <input type="text" class="form-control" id="inputAddress" placeholder="Subject">
                     </div>
-                    <textarea class="form-control form-group" placeholder="Message for me" rows="6"></textarea>
+                    <div class="form-group col-12">
+                            <textarea class="form-control"  placeholder="Message for me" rows="6"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-contact">send message</button>
                 </form>
             </div>
@@ -363,9 +352,8 @@
                         <i class="fab fa-google"></i>
                         <i class="fab fa-github"></i>
                     </div>
-                    <p>Copy Right 2018 &copy; <span>Theme-fair</span>All Rights Reserved</p>
+                    <p class="mb-0">Copy Right 2018 &copy; <span>Theme-fair</span>All Rights Reserved</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -376,6 +364,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 

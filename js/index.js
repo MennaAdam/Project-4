@@ -1,7 +1,6 @@
 $(function() {
 
 	//Adjust Home Height
-
 	$('.header').height($(window).height());
 
 	//Typer
@@ -16,25 +15,40 @@ $(function() {
 		autoInsertCss: true,
 	});
 
+	// Navbar
+	$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+		if (scroll >= 50) {
+			$(".change").css({
+				"background": "#333"
+			});
+			// $("li.nav-active").css("color", "#ff305b");
+		} else {
+			$(".change").css({
+				"background": "transparent"
+			});
+			$(".nav-link").css("color", "white");
+		}
+	});
+
+	//Add Active Class{}
+$('.navbar-nav').on('click', 'li',function(e) {
+	e.preventDefault();
+	$(".navbar-nav li.nav-active").removeClass("nav-active");
+	$(this).addClass("nav-active");
+});
+
 	//Trigger Owl Slider
 	$(".owl-carousel").owlCarousel({
-		items: 2,
-		autoWidth: true,
-		center: true,
-		loop: true,
-		margin: 50,
-		dots: false,
-		autoplay: true,
-		responsive: {
-			0: {
-				items: 1
-			},
-			600: {
-				items: 1
-			},
-			1000: {
-				items: 1
-			}
+		loop:true,
+		items:2,
+		autoplay: false,
+		dots:true,
+		margin: 10,
+		responsive:{
+			0:{items:1},
+			600:{items:1},
+			1000:{items:1}
 		}
 	});
 
@@ -58,4 +72,14 @@ $(function() {
 				}
 			});
 	});
+
+		//Trigger Mixitup
+
+		var mixer = mixitup('#container');
+
+		// Adjust shuffle
+		$('.shuffle li').click(function() {
+			$(this).addClass('selected').siblings().removeClass('selected');
+		});
+
 });
